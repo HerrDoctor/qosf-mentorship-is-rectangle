@@ -1,0 +1,7 @@
+jupyterlab==2.1.5
+qiskit==0.41.1
+pylatexenc
+pdflatex
+yquant
+qasm
+tikzplotlib

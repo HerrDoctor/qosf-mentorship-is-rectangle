@@ -1,0 +1,18 @@
+# Docker compose version
+version: '3.8'
+
+# Services
+services:
+  quantumEnv:
+    restart: "no"
+    build:
+      context: .
+    image: herrdoctor/qosf
+    ports:
+     - "8888:8888"
+    volumes:
+     - .:/use_cases
+    command: jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+
+#volumes:
+#  use_cases:
